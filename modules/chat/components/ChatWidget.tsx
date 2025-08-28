@@ -13,7 +13,8 @@ const ChatWidget = () => {
         transition={{ duration: 0.3 }}
       >
         <ChatWidgetHeader />
-        <ChatRoom isWidget={true} />
+        {/* <ChatRoom isWidget={true} /> */}
+        <ChatRoom />
       </motion.div>
     </AnimatePresence>
   );
