@@ -1,0 +1,206 @@
+{
+  "HomePage": {
+    "intro": "こんにちは、ブイ・ヴー・ティエン・アンです",
+    "location": "日本、東京在住 🇯🇵",
+    "location_type": "オンサイト勤務",
+    "resume": "Java、ブロックチェーン開発、コンテンツ管理の経験があります。活発で熱意のある性格で、探求心を持ち、自主学習やスキル向上に積極的に取り組んでいます。",
+    "skills": {
+      "title": "スキル",
+      "sub_title": "私の専門スキル"
+    },
+    "bento": {
+      "title": "注目セクション",
+      "sub_title": "私が制作・貢献・達成した全てをご覧ください。"
+    }
+  },
+  "AboutPage": {
+    "title": "自己紹介",
+    "description": "私についての簡単な紹介。",
+    "resume": {
+      "paragraf_1": "こんにちは！私はブイ・ヴー・ティエン・アンと申します。現在、日本の東京に在住しているフルスタック開発者であり、ブロックチェーン愛好家です。FPTポリテクニック大学でITを専攻し、現在はMidream日本語学校で日本語を学んでいます。",
+      "paragraf_2": "Javaやブロックチェーン技術の経験があり、特にSOLANA暗号通貨を活用したコミュニティプラットフォームの構築に携わってきました。また、教育機関での業務経験から、コンテンツ管理、教材作成、学習進捗管理のスキルも持っています。",
+      "paragraf_3": "ユーザーフレンドリーかつ効率的なソリューションの構築に情熱を注いでいます。インタラクティブなWebサイト開発、バックエンドシステム設計、教育・コミュニティ活動のサポートなど、様々な分野で協力しながら新しい技術を学び、貢献することを楽しんでいます。",
+      "paragraf_4": "よろしくお願いいたします。"
+    },
+    "career": {
+      "title": "経歴",
+      "sub_title": "私の職務経歴"
+    },
+    "education": {
+      "title": "学歴",
+      "sub_title": "私の学習の歩み"
+    },
+    "resume_download_button": "履歴書をダウンロード",
+    "portfolio_download_button": "ポートフォリオをダウンロード"
+  },
+  "AchievementsPage": {
+    "title": "実績",
+    "description": "学業や職務において取得した資格や受賞歴のコレクションです。",
+    "error": "サーバーでエラーが発生しました。",
+    "no_data": "データがありません。",
+    "show_credential": "証明書を表示"
+  },
+  "ProjectsPage": {
+    "title": "プロジェクト",
+    "description": "ブロックチェーンを活用したコミュニティプラットフォームや教育ツールなど、私が制作・参加したプロジェクトの一覧です。",
+    "view_project": "プロジェクトを見る",
+    "tech_stack": "使用技術",
+    "back_button": "戻る",
+    "source_code_text": "ソースコード",
+    "live_demo_text": "デモ版",
+    "error": "サーバーでエラーが発生しました。",
+    "no_data": "データがありません。"
+  },
+  "DashboardPage": {
+    "title": "ダッシュボード",
+    "description": "Next.js APIルートで構築した個人ダッシュボードで、開発統計や貢献状況をリアルタイムで可視化しています。",
+    "error": "サーバーでエラーが発生しました。",
+    "umami": {
+      "title": "Umami統計",
+      "sub_title": "ポートフォリオサイトのリアルタイムアクセスとインタラクションを監視します。",
+      "overview": {
+        "page_views": "ページビュー",
+        "visitors": "訪問者数",
+        "visits": "訪問回数",
+        "countries": "国",
+        "events": "イベント"
+      },
+      "chart": {
+        "title": "アクセス傾向",
+        "sessions": "セッション",
+        "page_views": "ページビュー"
+      },
+      "filter_placeholder": "ドメインでフィルター..."
+    },
+    "github": {
+      "title": "GitHub貢献状況",
+      "sub_title": "過去1年間のGitHub活動。",
+      "title_total_contribution": "合計",
+      "title_total_this_week_contributino": "今週",
+      "title_best_contribution": "最多",
+      "title_average_contribution": "平均",
+      "title_less_contribution": "少ない",
+      "title_more_contribution": "多い",
+      "unit": "日"
+    },
+    "wakatime": {
+      "title": "WakaTime統計",
+      "sub_title": "過去7日間のコーディング活動。",
+      "last_update": "最終更新日",
+      "start_date": "開始日",
+      "end_date": "終了日",
+      "daily_average": "1日あたりの平均コーディング時間",
+      "total_this_week": "今週の合計時間",
+      "best_day": "最も生産的な日",
+      "all_time_since_joined": "参加以来の累計時間",
+      "languages": "主な使用言語"
+    },
+    "codewars": {
+      "title": "Codewars進捗",
+      "sub_title": "Codewarsチャレンジのパフォーマンス指標。",
+      "title_rank": "ランク",
+      "title_honor": "名誉ポイント",
+      "title_completed": "完了したチャレンジ数",
+      "title_leaderboard": "世界ランキング",
+      "title_clan": "クラン",
+      "title_skills": "関連スキル"
+    },
+    "monkeytype": {
+      "title": "Monkeytype統計",
+      "sub_title": "タイピング統計とパフォーマンス。",
+      "joined": "参加日",
+      "current_streak": "現在の連続日数",
+      "unit_days": "日",
+      "title_test_started": "開始したテスト数",
+      "title_test_completed": "完了したテスト数",
+      "title_time_typing": "総タイピング時間",
+      "title_leaderboard": "英語タイピング歴代ランキング",
+      "unit_seconds": "秒",
+      "unit_time": "時間",
+      "unit_words": "単語",
+      "top": "トップ",
+      "days_ago": "日前",
+      "xp_until_next_level": "次のレベルまでのXP",
+      "total_xp": "総XP"
+    }
+  },
+  "ChatRoomPage": {
+    "title": "チャットルーム",
+    "description": "お気軽にご意見、ご提案、ご質問などをお寄せください！",
+    "placeholder": "メッセージを入力...",
+    "sign_in": {
+      "title": "会話に参加するにはログインしてください。データは安全に保護されます。",
+      "label": "ログイン方法",
+      "signed_label": "ログイン中：",
+      "sign_out_label": "ログアウト"
+    },
+    "widget": {
+      "title": "チャットルーム",
+      "tooltip_title": "チャットルームを開く",
+      "tooltip_minimize": "最小化",
+      "tooltip_signout": "ログアウト"
+    }
+  },
+  "ContactPage": {
+    "title": "お問い合わせ",
+    "description": "ぜひご連絡ください",
+    "social_media": {
+      "title": "SNSで見つける",
+      "gmail": {
+        "title": "連絡を取る",
+        "description": "協力や問い合わせはメールでご連絡ください。"
+      },
+      "instagram": {
+        "title": "私の活動をフォロー",
+        "description": "私のクリエイティブな活動をフォローしてください。"
+      },
+      "linkedin": {
+        "title": "つながる",
+        "description": "LinkedInで私とつながりましょう。"
+      },
+      "tiktok": {
+        "title": "楽しもう",
+        "description": "面白くて魅力的なコンテンツをご覧ください。"
+      },
+      "github": {
+        "title": "コードを探索",
+        "description": "私のオープンソース作品をご覧ください。"
+      }
+    },
+    "form": {
+      "title": "またはメッセージを送る",
+      "input_name": "名前",
+      "input_email": "メールアドレス",
+      "input_message": "メッセージ",
+      "button": "メール送信"
+    }
+  },
+  "SmartTalkPage": {
+    "title": "スマートトーク",
+    "description": "AIを活用した自然で洞察に満ちた会話とアイデア探索の空間。"
+  },
+  "Footer": {
+    "hire": "採用してください。",
+    "copyright_1": "著作権 © ",
+    "copyright_2": "ブイ・ヴー・ティエン・アン. 全著作権所有。"
+  },
+  "LocaleSwitcher": {
+    "en": "🇺🇸",
+    "jp": "🇯🇵",
+    "label": "言語"
+  },
+  "Navigation": {
+    "Home": "ホーム",
+    "About": "自己紹介",
+    "Achievements": "実績",
+    "Projects": "プロジェクト",
+    "Dashboard": "ダッシュボード",
+    "Chat Room": "チャットルーム",
+    "Contact": "お問い合わせ",
+    "Smart Talk": "スマートトーク"
+  },
+  "NotFoundPage": {
+    "title": "ページが見つかりません",
+    "button": "ホームに戻る"
+  }
+}
