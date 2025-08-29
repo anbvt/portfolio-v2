@@ -47,14 +47,7 @@ const RootLayout = async ({
 
   return (
     <html lang={locale} suppressHydrationWarning={true}>
-      <Script
-        defer
-        src="https://cloud.umami.is/script.js"
-        data-website-id="91c868c5-2a89-4a1d-b292-56c40ea30137"
-
-        // data-domains="satriabahari.site"
-        // data-website-id="8e2c9f27-a12b-48ca-8130-808ebe377aca"
-      ></Script>
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="7797ca43-fb55-4f8a-b088-25de9d74f4d2"></script>
       <body className={onestSans.className}>
         <NextTopLoader
           color="#4ade80"
