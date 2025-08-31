@@ -52,30 +52,6 @@ export type SkillProps = {
 const iconSize = 26;
 
 export const STACKS: SkillProps = {
-  Springboot: {
-    icon: <SiSpringboot size={iconSize} />,
-    background: "bg-green-500",
-    color: "text-green-500",
-    isActive: true,
-  },
-  Springsecurity: {
-    icon: <SiSpringsecurity size={iconSize} />,
-    background: "bg-green-500",
-    color: "text-green-500",
-    isActive: true,
-  },
-  AWS: {
-    icon: <SiAmazonaws size={iconSize} />,
-    background: "bg-black-500",
-    color: "text-black-500",
-    isActive: true,
-  },
-  Postgresql: {
-    icon: <SiPostgresql size={iconSize} />,
-    background: "bg-blue-500",
-    color: "text-blue-500",
-    isActive: true,
-  },
   HTML: {
     icon: <SiHtml5 size={iconSize} />,
     background: "bg-orange-500",
@@ -292,4 +268,22 @@ export const STACKS: SkillProps = {
     color: "text-neutral-50",
     isActive: true,
   },
+  SpringBoot: {
+    icon: <SiSpringboot size={iconSize} />,
+    background: "bg-green-500",
+    color: "text-green-500",
+    isActive: true,
+  },
+  SpringSecurity: {
+    icon: <SiSpringsecurity size={iconSize} />,
+    background: "bg-green-500",
+    color: "text-green-500",
+    isActive: true,
+  },
+  AWS: {
+    icon: <SiAmazonaws size={iconSize} />,
+    background: "bg-gray-500",
+    color: "text-gray-500",
+    isActive: true,
+  }
 };
