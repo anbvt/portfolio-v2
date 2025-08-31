@@ -59,7 +59,7 @@ export const PROJECTS: ProjectItem[] = [{
   description: "A glasses website for product reservations online",
   image: "/images/projects/glasses.png",
   link_demo: "https://anbvt-portfolio.vercel.app/",
-  link_github: "https://github.com/anbvt/portfolio",
+  link_github: "https://github.com/anbvt/glasses-stores",
   stacks: ["SpringBoot", "PostgreSql"],
   content: "A complete e-commerce platform with authentication, product management, and payment integration.",
   is_show: true,
