@@ -148,11 +148,10 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
     <div className={`relative w-fit ${className}`}>
       <div
         ref={listRef}
-        className={`max-h-[300px] overflow-y-auto p-4 ${
-          displayScrollbar
+        className={`max-h-[300px] overflow-y-auto p-4 ${displayScrollbar
             ? "[&::-webkit-scrollbar-thumb]:rounded-[4px] [&::-webkit-scrollbar-thumb]:bg-[#222] [&::-webkit-scrollbar-track]:bg-[#060010] [&::-webkit-scrollbar]:w-[8px]"
             : "scrollbar-hide"
-        }`}
+          }`}
         onScroll={handleScroll}
         style={{
           scrollbarWidth: displayScrollbar ? "thin" : "none",
@@ -175,18 +174,17 @@ const AnimatedList: React.FC<AnimatedListProps> = ({
                 <div className="rounded-xl bg-neutral-300 p-[3px] dark:bg-neutral-800">
                   <Image
                     src={item.image}
-                    width={150}
-                    height={50}
+                    width={200}
+                    height={120}
                     alt={item.text ?? `Image ${index}`}
-                    className="rounded-lg shadow-xl"
+                    className="h-[120px] w-[200px] rounded-lg shadow-xl object-cover"
                   />
                 </div>
               </Link>
             ) : (
               <div
-                className={`rounded-lg bg-[#111] p-4 ${
-                  selectedIndex === index ? "bg-[#222]" : ""
-                } ${itemClassName}`}
+                className={`rounded-lg bg-[#111] p-4 ${selectedIndex === index ? "bg-[#222]" : ""
+                  } ${itemClassName}`}
               >
                 <p className="m-0 text-white">
                   {item.text ?? `Item ${index + 1}`}
