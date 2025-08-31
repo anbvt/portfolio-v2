@@ -8,16 +8,15 @@ import { ProjectItem } from "@/common/types/projects";
 import { METADATA } from "@/common/constants/metadata";
 import { loadMdxFiles } from "@/common/libs/mdx";
 import { getProjectsDataBySlug } from "@/services/projects";
-
+import { PROJECTS } from "@/common/constants/projects";
 interface ProjectDetailPageProps {
   params: { slug: string };
 }
-
 export const generateMetadata = async ({
   params,
 }: ProjectDetailPageProps): Promise<Metadata> => {
-  const project = await getProjectDetail(params?.slug);
-
+  // const project = await getProjectDetail(params?.slug);
+  const project: ProjectItem = PROJECTS.find((item: ProjectItem) => item?.slug === params?.slug) as ProjectItem;
   return {
     title: `${project.title} ${METADATA.exTitle}`,
     description: project.description,
@@ -37,10 +36,11 @@ export const generateMetadata = async ({
 };
 
 const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
-  const projects = await getProjectsDataBySlug(slug);
+  // const projects = await getProjectsDataBySlug(slug);
+  const project: ProjectItem = PROJECTS.find((item: ProjectItem) => item?.slug === slug) as ProjectItem;
   const contents = loadMdxFiles();
   const content = contents.find((item) => item.slug === slug);
-  const response = { ...projects, content: content?.content };
+  const response = { ...project, content: content?.content };
   const data = JSON.parse(JSON.stringify(response));
   return data;
 };

@@ -11,13 +11,14 @@ import EmptyState from "@/common/components/elements/EmptyState";
 import { fetcher } from "@/services/fetcher";
 import { ProjectItem } from "@/common/types/projects";
 import Card from "@/common/components/elements/Card";
+import { PROJECTS } from "@/common/constants/projects";
 
 const Projects = () => {
-  const { data, isLoading, error } = useSWR("/api/projects", fetcher);
+  // const { data, isLoading, error } = useSWR("/api/projects", fetcher);
 
   const t = useTranslations("ProjectsPage");
 
-  const filteredProjects: ProjectItem[] = data
+  const filteredProjects: ProjectItem[] = PROJECTS
     ?.filter((item: ProjectItem) => item?.is_show)
     .sort((a: ProjectItem, b: ProjectItem) => {
       if (a.is_featured && !b.is_featured) return -1;
@@ -32,19 +33,19 @@ const Projects = () => {
     return <EmptyState message={t("no_data")} />;
   }
 
-  if (error) {
-    return <EmptyState message={t("error")} />;
-  }
+  // if (error) {
+  //   return <EmptyState message={t("error")} />;
+  // }
 
-  if (isLoading) {
-    return (
-      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-        {[...Array(4)].map((_, i) => (
-          <ProjectSkeleton key={i} />
-        ))}
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+  //       {[...Array(4)].map((_, i) => (
+  //         <ProjectSkeleton key={i} />
+  //       ))}
+  //     </div>
+  //   );
+  // }
 
   return (
     <section className="grid grid-cols-1 gap-6 md:grid-cols-2">

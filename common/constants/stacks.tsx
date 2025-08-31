@@ -34,6 +34,10 @@ import {
   SiJest,
   SiDocker,
   SiKotlin,
+  SiSpringboot,
+  SiAmazonaws,
+  SiPostgresql,
+  SiSpringsecurity
 } from "react-icons/si";
 
 export type SkillProps = {
@@ -48,6 +52,30 @@ export type SkillProps = {
 const iconSize = 26;
 
 export const STACKS: SkillProps = {
+  Springboot: {
+    icon: <SiSpringboot size={iconSize} />,
+    background: "bg-green-500",
+    color: "text-green-500",
+    isActive: true,
+  },
+  Springsecurity: {
+    icon: <SiSpringsecurity size={iconSize} />,
+    background: "bg-green-500",
+    color: "text-green-500",
+    isActive: true,
+  },
+  AWS: {
+    icon: <SiAmazonaws size={iconSize} />,
+    background: "bg-black-500",
+    color: "text-black-500",
+    isActive: true,
+  },
+  Postgresql: {
+    icon: <SiPostgresql size={iconSize} />,
+    background: "bg-blue-500",
+    color: "text-blue-500",
+    isActive: true,
+  },
   HTML: {
     icon: <SiHtml5 size={iconSize} />,
     background: "bg-orange-500",
@@ -140,8 +168,8 @@ export const STACKS: SkillProps = {
   },
   "Next.js": {
     icon: <SiNextdotjs size={iconSize} />,
-    background: "bg-neutral-800",
-    color: "text-neutral-50",
+    background: "bg-black-800",
+    color: "text-black-50",
     isActive: false,
   },
   "Node.js": {

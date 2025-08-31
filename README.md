@@ -3,8 +3,6 @@
 
 <br/>
 
-<img width="1525" height="1221" alt="Screenshot 2025-08-07 115929" src="https://raw.githubusercontent.com/anbvt/portfolio-v2/refs/heads/master/public/images/projects/portfolio.png" />
-
 ## 📘 Introduction
 
 This is my personal website built from scratch since February 2024 using modern technologies such as Next.js and TypeScript.
