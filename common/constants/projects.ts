@@ -42,7 +42,7 @@ export const PROJECTS: ProjectItem[] = [{
 {
   id: 4,
   title: "My Portfolio-v1",
-  slug: "my-portfolio",
+  slug: "my-portfolio-v1",
   description: "A website for me",
   image: "/images/projects/portfolio-v1.png",
   link_demo: "https://anbvt-portfolio.vercel.app/",
