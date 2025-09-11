@@ -5,7 +5,7 @@ import { LuDownload as DownloadIcon } from "react-icons/lu";
 const Portfolio = () => {
   const t = useTranslations("AboutPage");
 
-  const PORTFOLIO_URL = "https://portfolio-anbvt562003.vercel.app/static/media/CV_Bui_Vu_Thien_An_Backend_Developer.a62185f0af5169c6e042.pdf";
+  const PORTFOLIO_URL = "https://portfolio-anbvt562003.vercel.app/static/media/CV_Bui_Vu_Thien_An_Backend_Developer.7b7c630afb0c5932e672.pdf";
 
   return (
     <Link
