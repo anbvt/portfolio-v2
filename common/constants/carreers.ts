@@ -2,7 +2,7 @@ import { CareerProps } from "../types/careers";
 
 export const CAREERS: CareerProps[] = [
   {
-    position: "Support Staff",
+    position: "Japanese Language Teaching Assistant (Beginner Level)",
     company: "Taiyou Japanese Education",
     logo: "/images/careers/taiyou.png",
     location: "Bien Hoa City, Vietnam 🇻🇳",
@@ -13,9 +13,7 @@ export const CAREERS: CareerProps[] = [
     industry: "",
     link: "http://tiengnhatdongnai.com/",
     responsibilities: [
-      "Manage content across the center's media platforms andcreate enrollment banners to effectively promote theinstitution.",
-      "Develop instructional materials and tests while maintainingcleanliness and organization in the workspace and learningenvironment.",
-      "Monitor student progress, manage records including tuitionfees and class schedules to ensure smooth and accurateoperations."
+      "Assisted in teaching basic Japanese (N5 level) to children and young learners. Supported the main teacher in preparing lessons, explaining grammar and vocabulary, and helping students practice speaking and writing. Also helped manage classroom activities and create a friendly learning environment."
     ],
     isShow: true,
   },
