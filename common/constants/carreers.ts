@@ -2,8 +2,8 @@ import { CareerProps } from "../types/careers";
 
 export const CAREERS: CareerProps[] = [
   {
-    position: "Japanese Language Teaching Assistant (Beginner Level)",
-    company: "Taiyou Japanese Education",
+    position: "日本語講師アシスタント",
+    company: "Taiyou Japanese Language Center",
     logo: "/images/careers/taiyou.png",
     location: "Bien Hoa City, Vietnam 🇻🇳",
     location_type: "Onsite",
@@ -13,13 +13,13 @@ export const CAREERS: CareerProps[] = [
     industry: "",
     link: "http://tiengnhatdongnai.com/",
     responsibilities: [
-      "Assisted in teaching basic Japanese (N5 level) to children and young learners. Supported the main teacher in preparing lessons, explaining grammar and vocabulary, and helping students practice speaking and writing. Also helped manage classroom activities and create a friendly learning environment."
+      "日本語初級(N5) の指導補助として、授業準備や会話・作文練習のサポートを担当."
     ],
     isShow: true,
   },
   {
-    position: "Blockchain Intern at Solana & SuperteamVN",
-    company: "Solana Foundation",
+    position: "学生インターン",
+    company: "Superteam Vietnam",
     logo: "/images/careers/solana.png",
     location: "Ho Chi Minh City, Vietnam 🇻🇳",
     location_type: "Onsite",
@@ -27,11 +27,9 @@ export const CAREERS: CareerProps[] = [
     start_date: "September 2023",
     end_date: "December 2023",
     industry: "",
-    link: "https://solana.org/",
+    link: "https://vn.superteam.fun/",
     responsibilities: [
-      "Build a community website that allows users to create investmentor fundraising campaigns using the SOLANA cryptocurrency.",
-      "Learn Shyft Network to help to build a function SOLANA transactionhistory visibility on the website.",
-      "Making slides and pitching products",
+      "LP作成、Web開発、Blockchain技術の学習."
     ],
     isShow: true,
   }
