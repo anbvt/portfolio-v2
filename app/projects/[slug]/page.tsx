@@ -10,14 +10,17 @@ import { loadMdxFiles } from "@/common/libs/mdx";
 import { getProjectsDataBySlug } from "@/services/projects";
 import { PROJECTS } from "@/common/constants/projects";
 import { getTranslations } from "next-intl/server";
+import { notFound } from "next/navigation";
+
 interface ProjectDetailPageProps {
   params: { slug: string };
 }
 export const generateMetadata = async ({
   params,
 }: ProjectDetailPageProps): Promise<Metadata> => {
-  // const project = await getProjectDetail(params?.slug);
-  const project: ProjectItem = PROJECTS.find((item: ProjectItem) => item?.slug === params?.slug) as ProjectItem;
+  const project = PROJECTS.find((item: ProjectItem) => item.slug === params.slug);
+  if (!project) notFound();
+
   const t = await getTranslations("ProjectsPage.items");
   const title = t(`${params.slug}.title`);
   const description = t(`${params.slug}.description`);
@@ -40,8 +43,9 @@ export const generateMetadata = async ({
 };
 
 const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
-  // const projects = await getProjectsDataBySlug(slug);
-  const project: ProjectItem = PROJECTS.find((item: ProjectItem) => item?.slug === slug) as ProjectItem;
+  const project = PROJECTS.find((item: ProjectItem) => item.slug === slug);
+  if (!project) notFound();
+
   const contents = loadMdxFiles();
   const content = contents.find((item) => item.slug === slug);
   const response = { ...project, content: content?.content };

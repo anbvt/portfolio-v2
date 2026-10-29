@@ -29,7 +29,7 @@ const MobileHeader = () => {
           <div className="z-10 w-max rounded-full border-2 border-white shadow-md dark:border-neutral-800">
             <Image
               src={"/images/anbvt.jpg"}
-              alt="profile"
+              alt={t("profileAlt")}
               width={isOpen ? 80 : imageSize * 0.9}
               height={isOpen ? 80 : imageSize * 0.9}
               rounded="rounded-full"
@@ -41,7 +41,7 @@ const MobileHeader = () => {
                 {t("intro")}
               </h2>
             </Link>
-            <Tooltip title="Verified">
+            <Tooltip title={t("verified")}>
               <VerifiedIcon size={18} className="text-blue-400" />
             </Tooltip>
           </div>

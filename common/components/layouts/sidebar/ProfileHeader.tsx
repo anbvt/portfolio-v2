@@ -28,7 +28,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         src={"/images/anbvt-1.jpg"}
         width={expandMenu ? 80 : imageSize * 0.9}
         height={expandMenu ? 80 : imageSize * 0.9}
-        alt={t("intro")}
+        alt={t("profileAlt")}
         className="border-2 border-neutral-400 dark:border-neutral-600 lg:hover:scale-105"
         rounded="rounded-full"
       />
@@ -40,7 +40,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
           </h2>
         </Link>
 
-        <Tooltip title="Verified">
+        <Tooltip title={t("verified")}>
           <VerifiedIcon size={18} className="text-blue-400" />
         </Tooltip>
       </div>

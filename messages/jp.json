@@ -1,6 +1,9 @@
 {
   "HomePage": {
     "intro": "BUI VU THIEN AN",
+    "metadataTitle": "個人ウェブサイト",
+    "verified": "認証済み",
+    "profileAlt": "BUI VU THIEN ANのプロフィール写真",
     "location": "日本、東京在住 🇯🇵",
     "location_type": "オンサイト勤務",
     "resume": "Java、ブロックチェーン開発、コンテンツ管理の経験があります。活発で熱意のある性格で、探求心を持ち、自主学習やスキル向上に積極的に取り組んでいます。",
@@ -125,7 +128,7 @@
     "error": "サーバーでエラーが発生しました。",
     "no_data": "データがありません。",
     "items": {
-      "web-cineme": {
+      "web-cinema": {
         "title": "映画チケット予約サイト",
         "description": "映画館の座席をオンラインで予約できるチケット予約サイトです。"
       },

@@ -3,12 +3,17 @@ import { Metadata } from "next";
 import Container from "@/common/components/elements/Container";
 import Home from "@/modules/home";
 import { METADATA } from "@/common/constants/metadata";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: `${METADATA.creator} | Personal Website`,
-  alternates: {
-    canonical: `${process.env.DOMAIN}`,
-  },
+export const generateMetadata = async (): Promise<Metadata> => {
+  const t = await getTranslations("HomePage");
+
+  return {
+    title: `${t("intro")} | ${t("metadataTitle")}`,
+    alternates: {
+      canonical: `${process.env.DOMAIN}`,
+    },
+  };
 };
 
 const HomePage = () => {

@@ -1,6 +1,9 @@
 {
   "HomePage": {
     "intro": "BUI VU THIEN AN",
+    "metadataTitle": "Personal Website",
+    "verified": "Verified",
+    "profileAlt": "Profile photo of BUI VU THIEN AN",
     "location": "Living in Tokyo, Japan 🇯🇵",
     "location_type": "Onsite",
     "resume": "I have experience in Java, blockchain development, and content management. With a dynamic and enthusiastic personality, I excel at exploration, self-learning, and skill enhancement.",
@@ -125,7 +128,7 @@
     "error": "An error occurred on the server.",
     "no_data": "No data available.",
     "items": {
-      "web-cineme": {
+      "web-cinema": {
         "title": "Website Cinema",
         "description": "A movie ticket website for room reservations online"
       },
