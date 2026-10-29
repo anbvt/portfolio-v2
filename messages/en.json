@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "intro": "Hi, I'm Bùi Vũ Thiên Ân",
+    "intro": "BUI VU THIEN AN",
     "location": "Living in Tokyo, Japan 🇯🇵",
     "location_type": "Onsite",
     "resume": "I have experience in Java, blockchain development, and content management. With a dynamic and enthusiastic personality, I excel at exploration, self-learning, and skill enhancement.",
@@ -8,9 +8,40 @@
       "title": "Skills",
       "sub_title": "My professional skills."
     },
+    "serviceRole": "Website Developer",
+    "chatPreview": {
+      "question": "Hi, is this your website?",
+      "answer": "Yes, I built it myself!"
+    },
     "bento": {
       "title": "Featured Sections",
-      "sub_title": "Explore everything I’ve crafted, contributed, and accomplished."
+      "sub_title": "Explore everything I’ve crafted, contributed, and accomplished.",
+      "items": {
+        "projects": {
+          "title": "Projects Showcase",
+          "description": "A selection of real apps built to solve real problems."
+        },
+        "about": {
+          "title": "About Me",
+          "description": "Who I am and what I do."
+        },
+        "skills": {
+          "title": "Skills & Tools",
+          "description": "Technologies I use to build websites."
+        },
+        "achievements": {
+          "title": "Achievements",
+          "description": "Milestones from programs, projects, and communities."
+        },
+        "chat": {
+          "title": "Chat Room",
+          "description": "An open space to talk and collaborate."
+        },
+        "services": {
+          "title": "Services",
+          "description": "End-to-end web development solutions."
+        }
+      }
     }
   },
   "AboutPage": {
@@ -24,11 +55,53 @@
     },
     "career": {
       "title": "Career",
-      "sub_title": "My professional journey."
+      "sub_title": "My professional journey.",
+      "present": "Present",
+      "duration": {
+        "year": "year",
+        "years": "years",
+        "month": "month",
+        "months": "months"
+      },
+      "roles": {
+        "japaneseTeacherAssistant": {
+          "position": "Japanese Language Teacher Assistant",
+          "responsibilities": [
+            "Assisted with beginner-level (N5) Japanese classes by preparing lessons and supporting conversation and writing practice."
+          ]
+        },
+        "studentIntern": {
+          "position": "Student Intern",
+          "responsibilities": [
+            "Created landing pages, developed websites, and studied blockchain technology."
+          ]
+        }
+      }
     },
     "education": {
       "title": "Education",
-      "sub_title": "My educational journey."
+      "sub_title": "My educational journey.",
+      "present": "Present",
+      "institutions": {
+        "wasedaBunri": {
+          "school": "Waseda BUNRI Professional Training College",
+          "degree": "Advanced Diploma",
+          "major": "App and Web Development",
+          "location": "Tokyo, Japan 🇯🇵"
+        },
+        "midream": {
+          "school": "Midream Japanese Language School",
+          "degree": "International Student",
+          "major": "Japanese Language Studies",
+          "location": "Tokyo, Japan 🇯🇵"
+        },
+        "fptPolytechnic": {
+          "school": "FPT Polytechnic College",
+          "degree": "College Diploma",
+          "major": "Information Technology",
+          "location": "Ho Chi Minh City, Vietnam 🇻🇳"
+        }
+      }
     },
     "resume_download_button": "Download Resume",
     "portfolio_download_button": "Download Portfolio"
@@ -44,12 +117,35 @@
     "title": "Projects",
     "description": "A showcase of projects I’ve built or contributed to, including blockchain-based community platforms and educational tools.",
     "view_project": "View Project",
+    "featured": "Featured",
     "tech_stack": "Tech Stack",
     "back_button": "Back",
     "source_code_text": "Source Code",
     "live_demo_text": "Live Demo",
     "error": "An error occurred on the server.",
-    "no_data": "No data available."
+    "no_data": "No data available.",
+    "items": {
+      "web-cineme": {
+        "title": "Website Cinema",
+        "description": "A movie ticket website for room reservations online"
+      },
+      "web-laptop": {
+        "title": "Website Laptop",
+        "description": "A laptop website for product reservations online"
+      },
+      "my-portfolio": {
+        "title": "My Portfolio-v2",
+        "description": "A website for me"
+      },
+      "my-portfolio-v1": {
+        "title": "My Portfolio-v1",
+        "description": "A website for me"
+      },
+      "glasses-shop": {
+        "title": "Glasses Shop",
+        "description": "A glasses website for product reservations online"
+      }
+    }
   },
   "DashboardPage": {
     "title": "Dashboard",
@@ -146,6 +242,7 @@
     "description": "Let`s get in touch",
     "social_media": {
       "title": "Find me on social media",
+      "go_to": "Go to",
       "gmail": {
         "title": "Stay in Touch",
         "description": "Reach out via email for inquiries or collaborations."

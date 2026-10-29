@@ -9,6 +9,7 @@ import { METADATA } from "@/common/constants/metadata";
 import { loadMdxFiles } from "@/common/libs/mdx";
 import { getProjectsDataBySlug } from "@/services/projects";
 import { PROJECTS } from "@/common/constants/projects";
+import { getTranslations } from "next-intl/server";
 interface ProjectDetailPageProps {
   params: { slug: string };
 }
@@ -17,9 +18,12 @@ export const generateMetadata = async ({
 }: ProjectDetailPageProps): Promise<Metadata> => {
   // const project = await getProjectDetail(params?.slug);
   const project: ProjectItem = PROJECTS.find((item: ProjectItem) => item?.slug === params?.slug) as ProjectItem;
+  const t = await getTranslations("ProjectsPage.items");
+  const title = t(`${params.slug}.title`);
+  const description = t(`${params.slug}.description`);
   return {
-    title: `${project.title} ${METADATA.exTitle}`,
-    description: project.description,
+    title: `${title} ${METADATA.exTitle}`,
+    description,
     openGraph: {
       images: project.image,
       url: `${METADATA.openGraph.url}/${project.slug}`,
@@ -47,15 +51,16 @@ const getProjectDetail = async (slug: string): Promise<ProjectItem> => {
 
 const ProjectDetailPage = async ({ params }: ProjectDetailPageProps) => {
   const data = await getProjectDetail(params?.slug);
+  const t = await getTranslations("ProjectsPage.items");
 
-  const PAGE_TITLE = data?.title;
-  const PAGE_DESCRIPTION = data?.description;
+  const PAGE_TITLE = t(`${params.slug}.title`);
+  const PAGE_DESCRIPTION = t(`${params.slug}.description`);
 
   return (
     <Container data-aos="fade-up">
       <BackButton url="/projects" />
       <PageHeading title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
-      <ProjectDetail {...data} />
+      <ProjectDetail {...data} title={PAGE_TITLE} description={PAGE_DESCRIPTION} />
     </Container>
   );
 };

@@ -9,14 +9,14 @@ import { ProjectItem } from "@/common/types/projects";
 import { STACKS } from "@/common/constants/stacks";
 
 const ProjectCard = ({
-  title,
   slug,
-  description,
   image,
   stacks,
   is_featured,
 }: ProjectItem) => {
   const t = useTranslations("ProjectsPage");
+  const title = t(`items.${slug}.title`);
+  const description = t(`items.${slug}.description`);
 
   const trimmedContent =
     description.slice(0, 85) + (description.length > 85 ? "..." : "");
@@ -27,7 +27,7 @@ const ProjectCard = ({
         {is_featured && (
           <div className="absolute right-0 top-0 z-10 flex items-center gap-x-1 rounded-bl-lg rounded-tr-lg bg-cyan-500 px-2 py-1 text-sm font-medium text-neutral-900">
             <PinIcon size={15} />
-            <span>Featured</span>
+            <span>{t("featured")}</span>
           </div>
         )}
         <div className="relative">

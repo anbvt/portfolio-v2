@@ -19,9 +19,16 @@ const BentoGrid = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-2 md:grid-cols-4">
-        {filteredBento.map((item, index) => (
-          <BentoCard key={index} {...item} />
-        ))}
+        {filteredBento.map((item, index) => {
+          return (
+            <BentoCard
+              key={index}
+              {...item}
+              title={t(`items.${item.translationKey}.title`)}
+              description={t(`items.${item.translationKey}.description`)}
+            />
+          );
+        })}
       </div>
     </section>
   );

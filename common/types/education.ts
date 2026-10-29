@@ -1,4 +1,5 @@
 export type EducationProps = {
+  translationKey?: "wasedaBunri" | "midream" | "fptPolytechnic";
   school: string;
   major: string;
   logo: string;

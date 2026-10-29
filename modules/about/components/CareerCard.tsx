@@ -7,7 +7,7 @@ import { useState } from "react";
 import { BsBuildings as CompanyIcon } from "react-icons/bs";
 import { HiChevronRight as ChevronIcon } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { differenceInMonths, differenceInYears, format } from "date-fns";
 
 import SpotlightCard from "@/common/components/elements/SpotlightCard";
@@ -23,34 +23,43 @@ const CareerCard = ({
   link,
   type,
   location_type,
+  translationKey,
   responsibilities,
   indexCareer,
 }: CareerProps) => {
   const [isShowResponsibility, setIsShowResponsibility] = useState(false);
 
   const locale = useLocale();
+  const t = useTranslations("AboutPage.career");
 
   const startDate = new Date(start_date);
   const endDate = end_date ? new Date(end_date) : new Date();
 
   const durationYears = differenceInYears(endDate, startDate);
   const durationMonths = differenceInMonths(endDate, startDate) % 12;
+  const dateFormat = locale === "jp" ? "yyyy年M月" : "MMM yyyy";
 
-  const yearText =
-    locale == "en" ? `year${durationYears > 1 ? "s" : ""}` : "tahun";
-
-  let durationText = "";
+  const durationParts: string[] = [];
   if (durationYears > 0) {
-    durationText += `${durationYears} ${yearText}`;
+    durationParts.push(
+      `${durationYears} ${t(
+        durationYears === 1 ? "duration.year" : "duration.years",
+      )}`,
+    );
   }
   if (durationMonths > 0 || durationYears === 0) {
-    durationText += `${durationMonths} Month${durationMonths > 1 ? "s" : ""}`;
+    durationParts.push(
+      `${durationMonths} ${t(
+        durationMonths === 1 ? "duration.month" : "duration.months",
+      )}`,
+    );
   }
+  const durationText = durationParts.join(" ");
 
   const hideText = locale == "en" ? "Hide" : "職務内容を非表示";
   const showText = locale == "en" ? "Show" : "職務内容を表示";
-  const responsibilityText =
-    locale == "en" ? "responsibilities" : "";
+  const responsibilityText = locale == "en" ? "responsibilities" : "";
+  const positionText = t(`roles.${translationKey}.position`);
 
   return (
     <SpotlightCard className="flex items-start gap-5 p-6">
@@ -67,7 +76,7 @@ const CareerCard = ({
       )}
 
       <div className="space-y-1">
-        <h5>{position}</h5>
+        <h5>{positionText || position}</h5>
         <div className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
           <div className="flex flex-col gap-2 md:flex-row">
             <Link href={link || "#"} target="_blank">
@@ -83,8 +92,10 @@ const CareerCard = ({
 
           <div className="flex flex-col gap-2 text-[13px] md:flex-row">
             <div className="flex gap-1 text-neutral-600 dark:text-neutral-400">
-              <span>{format(startDate, "MMM yyyy")}</span> -{" "}
-              <span>{end_date ? format(endDate, "MMM yyyy") : "Present"}</span>
+              <span>{format(startDate, dateFormat)}</span> -{" "}
+              <span>
+                {end_date ? format(endDate, dateFormat) : t("present")}
+              </span>
             </div>
 
             <span className="hidden text-neutral-300 dark:text-neutral-700 md:block">
@@ -136,7 +147,9 @@ const CareerCard = ({
                   >
                     {responsibilities?.map((responsibility, index) => (
                       <motion.li key={index} layout>
-                        {responsibility}
+                        {t(
+                          `roles.${translationKey}.responsibilities.${index}`,
+                        ) || responsibility}
                       </motion.li>
                     ))}
                   </motion.ul>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MdArrowOutward as ArrowIcon } from "react-icons/md";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 import { SocialMediaProps } from "@/common/types/socialMedia";
 import SpotlightCard from "@/common/components/elements/SpotlightCard";
@@ -19,7 +19,6 @@ const ContactCard = ({
   colSpan,
 }: SocialMediaProps) => {
   const t = useTranslations("ContactPage");
-  const locale = useLocale();
 
   return (
     <SpotlightCard
@@ -45,7 +44,7 @@ const ContactCard = ({
             data-umami-event={`click_contact_${name}`}
           >
             <p className="text-sm font-medium">
-              {locale == "en" ? "Go to" : "Pergi ke"}{" "}
+              {t("social_media.go_to")}{" "}
               <span className="capitalize">{name}</span>
             </p>
             <ArrowIcon size={17} />

@@ -2,6 +2,7 @@ import { EducationProps } from "../types/education";
 
 export const EDUCATION: EducationProps[] = [
   {
+    translationKey: "wasedaBunri",
     school: "早稲田文理専門学校",
     major: "アプリ・WEB制作学科",
     logo: "/images/education/wbc.png",
@@ -12,6 +13,7 @@ export const EDUCATION: EducationProps[] = [
     link: "https://www.wbc.ac.jp/"
   },
   {
+    translationKey: "midream",
     school: "Midream Japanese Language School",
     major: "Japanese Language School",
     logo: "/images/education/midream.png",
@@ -22,6 +24,7 @@ export const EDUCATION: EducationProps[] = [
     link: "https://midream.ac.jp/"
   },
   {
+    translationKey: "fptPolytechnic",
     school: "FPT Polytechnic College",
     major: "Information Technology",
     logo: "/images/education/fpl.png",

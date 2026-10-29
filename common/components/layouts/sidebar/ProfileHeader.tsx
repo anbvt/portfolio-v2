@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MdVerified as VerifiedIcon } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 import ThemeToggle from "./ThemeToggle";
 import IntlToggle from "./IntlToggle";
@@ -14,6 +15,8 @@ interface ProfileHeaderProps {
 }
 
 const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
+  const t = useTranslations("HomePage");
+
   return (
     <div
       className={cn(
@@ -25,7 +28,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
         src={"/images/anbvt-1.jpg"}
         width={expandMenu ? 80 : imageSize * 0.9}
         height={expandMenu ? 80 : imageSize * 0.9}
-        alt="Bùi Vũ Thiên Ân"
+        alt={t("intro")}
         className="border-2 border-neutral-400 dark:border-neutral-600 lg:hover:scale-105"
         rounded="rounded-full"
       />
@@ -33,7 +36,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
       <div className="mt-1 flex items-center gap-2 lg:mt-4">
         <Link href="/" passHref>
           <h2 className="flex-grow text-lg font-medium lg:text-xl">
-            Bùi Vũ Thiên Ân
+            {t("intro")}
           </h2>
         </Link>
 

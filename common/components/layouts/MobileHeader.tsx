@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { MdVerified as VerifiedIcon } from "react-icons/md";
+import { useTranslations } from "next-intl";
 
 import useIsMobile from "@/hooks/useIsMobile";
 import { useMenu } from "@/common/stores/menu";
@@ -12,6 +13,7 @@ import Tooltip from "../elements/Tooltip";
 import Image from "../elements/Image";
 
 const MobileHeader = () => {
+  const t = useTranslations("HomePage");
   const isMobile = useIsMobile();
   const { isOpen, toggleMenu } = useMenu();
   const imageSize = isMobile ? 40 : 100;
@@ -36,7 +38,7 @@ const MobileHeader = () => {
           <div className="mt-1 flex items-center gap-2">
             <Link href="/" passHref>
               <h2 className="flex-grow whitespace-nowrap text-lg font-medium lg:text-xl">
-                Bùi Vũ Thiên Ân
+                {t("intro")}
               </h2>
             </Link>
             <Tooltip title="Verified">

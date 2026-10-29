@@ -9,6 +9,7 @@ export interface CareerProps {
   end_date: string | null;
   industry: string;
   link: string | null;
+  translationKey: "japaneseTeacherAssistant" | "studentIntern";
   responsibilities?: string[];
   indexCareer?: number;
   isShow?: boolean;

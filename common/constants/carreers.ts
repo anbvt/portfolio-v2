@@ -2,6 +2,7 @@ import { CareerProps } from "../types/careers";
 
 export const CAREERS: CareerProps[] = [
   {
+    translationKey: "japaneseTeacherAssistant",
     position: "日本語講師アシスタント",
     company: "Taiyou Japanese Language Center",
     logo: "/images/careers/taiyou.png",
@@ -18,6 +19,7 @@ export const CAREERS: CareerProps[] = [
     isShow: true,
   },
   {
+    translationKey: "studentIntern",
     position: "学生インターン",
     company: "Superteam Vietnam",
     logo: "/images/careers/solana.png",

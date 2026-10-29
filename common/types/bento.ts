@@ -1,4 +1,5 @@
 export type BentoItemProps = {
+  translationKey: "projects" | "about" | "skills" | "achievements" | "chat" | "services";
   title: string;
   description: string;
   label?: string;

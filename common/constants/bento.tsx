@@ -22,6 +22,7 @@ const size = 22;
 
 export const BENTO: BentoItemProps[] = [
   {
+    translationKey: "projects",
     title: "Projects Showcase",
     description: "A selection of real apps built to solve real problems.",
     label: "Projects",
@@ -33,6 +34,7 @@ export const BENTO: BentoItemProps[] = [
     isShow: true,
   },
   {
+    translationKey: "about",
     title: "About Me",
     description: "Who I am and what I do.",
     label: "About",
@@ -44,6 +46,7 @@ export const BENTO: BentoItemProps[] = [
     isShow: true,
   },
   {
+    translationKey: "skills",
     title: "Skills & Tools",
     description: "Covering website technologies.",
     label: "Stack",
@@ -55,6 +58,7 @@ export const BENTO: BentoItemProps[] = [
     isShow: true,
   },
   {
+    translationKey: "achievements",
     title: "Achievements",
     description: "Milestones from programs, projects, and communities.",
     label: "Achievements",
@@ -66,6 +70,7 @@ export const BENTO: BentoItemProps[] = [
     isShow: true,
   },
   {
+    translationKey: "chat",
     title: "Chat Room",
     description: "Open space to talk and collaborate.",
     label: "Chat",
@@ -77,6 +82,7 @@ export const BENTO: BentoItemProps[] = [
     isShow: true,
   },
   {
+    translationKey: "services",
     title: "Services",
     description: "End-to-end solutions in web developer",
     label: "Services",

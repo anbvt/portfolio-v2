@@ -1,6 +1,6 @@
 {
   "HomePage": {
-    "intro": "こんにちは、ブイ・ヴー・ティエン・アンです",
+    "intro": "BUI VU THIEN AN",
     "location": "日本、東京在住 🇯🇵",
     "location_type": "オンサイト勤務",
     "resume": "Java、ブロックチェーン開発、コンテンツ管理の経験があります。活発で熱意のある性格で、探求心を持ち、自主学習やスキル向上に積極的に取り組んでいます。",
@@ -8,9 +8,40 @@
       "title": "スキル",
       "sub_title": "私の専門スキル"
     },
+    "serviceRole": "Website 開発者",
+    "chatPreview": {
+      "question": "こんにちは、これはあなたのウェブサイトですか？",
+      "answer": "はい、自分で作りました！"
+    },
     "bento": {
       "title": "注目セクション",
-      "sub_title": "私が制作・貢献・達成した全てをご覧ください。"
+      "sub_title": "私が制作・貢献・達成した全てをご覧ください。",
+      "items": {
+        "projects": {
+          "title": "プロジェクト紹介",
+          "description": "課題解決のために開発したアプリをご紹介します。"
+        },
+        "about": {
+          "title": "自己紹介",
+          "description": "私について、そして取り組んでいることをご紹介します。"
+        },
+        "skills": {
+          "title": "スキルとツール",
+          "description": "Webサイトの開発に使用している技術です。"
+        },
+        "achievements": {
+          "title": "実績",
+          "description": "プログラム、プロジェクト、コミュニティでの成果です。"
+        },
+        "chat": {
+          "title": "チャットルーム",
+          "description": "会話や共同作業のためのオープンな場所です。"
+        },
+        "services": {
+          "title": "サービス",
+          "description": "Web開発を企画から実装までサポートします。"
+        }
+      }
     }
   },
   "AboutPage": {
@@ -24,11 +55,53 @@
     },
     "career": {
       "title": "経歴",
-      "sub_title": "私の職務経歴"
+      "sub_title": "私の職務経歴",
+      "present": "現在",
+      "duration": {
+        "year": "年",
+        "years": "年",
+        "month": "か月",
+        "months": "か月"
+      },
+      "roles": {
+        "japaneseTeacherAssistant": {
+          "position": "日本語講師アシスタント",
+          "responsibilities": [
+            "日本語初級(N5) の指導補助として、授業準備や会話・作文練習のサポートを担当."
+          ]
+        },
+        "studentIntern": {
+          "position": "学生インターン",
+          "responsibilities": [
+            "LP作成、Web開発、Blockchain技術の学習."
+          ]
+        }
+      }
     },
     "education": {
       "title": "学歴",
-      "sub_title": "私の学習の歩み"
+      "sub_title": "私の学習の歩み",
+      "present": "現在",
+      "institutions": {
+        "wasedaBunri": {
+          "school": "早稲田文理専門学校",
+          "degree": "専門士",
+          "major": "アプリ・Web制作学科",
+          "location": "東京都、日本 🇯🇵"
+        },
+        "midream": {
+          "school": "ミッドリーム日本語学校",
+          "degree": "留学生",
+          "major": "日本語学習",
+          "location": "東京都、日本 🇯🇵"
+        },
+        "fptPolytechnic": {
+          "school": "FPTポリテクニック",
+          "degree": "短期大学卒業",
+          "major": "情報技術",
+          "location": "ホーチミン市、ベトナム 🇻🇳"
+        }
+      }
     },
     "resume_download_button": "履歴書をダウンロード",
     "portfolio_download_button": "ポートフォリオをダウンロード"
@@ -44,12 +117,35 @@
     "title": "プロジェクト",
     "description": "ブロックチェーンを活用したコミュニティプラットフォームや教育ツールなど、私が制作・参加したプロジェクトの一覧です。",
     "view_project": "プロジェクトを見る",
+    "featured": "おすすめ",
     "tech_stack": "使用技術",
     "back_button": "戻る",
     "source_code_text": "ソースコード",
     "live_demo_text": "デモ版",
     "error": "サーバーでエラーが発生しました。",
-    "no_data": "データがありません。"
+    "no_data": "データがありません。",
+    "items": {
+      "web-cineme": {
+        "title": "映画チケット予約サイト",
+        "description": "映画館の座席をオンラインで予約できるチケット予約サイトです。"
+      },
+      "web-laptop": {
+        "title": "ノートパソコン予約サイト",
+        "description": "ノートパソコンをオンラインで予約できるサイトです。"
+      },
+      "my-portfolio": {
+        "title": "ポートフォリオサイト（第2版）",
+        "description": "プロフィールや制作実績を紹介するポートフォリオサイトです。"
+      },
+      "my-portfolio-v1": {
+        "title": "ポートフォリオサイト（第1版）",
+        "description": "プロフィールや制作実績を紹介するポートフォリオサイトです。"
+      },
+      "glasses-shop": {
+        "title": "メガネショップ",
+        "description": "メガネをオンラインで予約できるショップサイトです。"
+      }
+    }
   },
   "DashboardPage": {
     "title": "ダッシュボード",
@@ -146,6 +242,7 @@
     "description": "ぜひご連絡ください",
     "social_media": {
       "title": "SNSで見つける",
+      "go_to": "こちらから",
       "gmail": {
         "title": "連絡を取る",
         "description": "協力や問い合わせはメールでご連絡ください。"
