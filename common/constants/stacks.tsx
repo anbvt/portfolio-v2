@@ -1,7 +1,7 @@
 import { BiLogoPostgresql } from "react-icons/bi";
 import { BsFillBootstrapFill, BsRobot } from "react-icons/bs";
 import { TbBrandFramerMotion } from "react-icons/tb";
-import { FaNpm, FaGolang } from "react-icons/fa6";
+import { FaNpm, FaGolang, FaJava } from "react-icons/fa6";
 import {
   SiCss3,
   SiExpress,
@@ -37,7 +37,9 @@ import {
   SiSpringboot,
   SiAmazonaws,
   SiPostgresql,
-  SiSpringsecurity
+  SiSpringsecurity,
+  SiGit,
+  SiGithubactions
 } from "react-icons/si";
 
 export type SkillProps = {
@@ -110,13 +112,13 @@ export const STACKS: SkillProps = {
     icon: <SiReacthookform size={iconSize} />,
     background: "bg-pink-500",
     color: "text-pink-500",
-    isActive: false,
+    isActive: true,
   },
   "React Router": {
     icon: <SiReactrouter size={iconSize} />,
     background: "bg-red-500",
     color: "text-red-500",
-    isActive: false,
+    isActive: true,
   },
   Vite: {
     icon: <SiVite size={iconSize} />,
@@ -128,13 +130,13 @@ export const STACKS: SkillProps = {
     icon: <TbBrandFramerMotion size={iconSize} />,
     background: "bg-yellow-400",
     color: "text-yellow-400",
-    isActive: false,
+    isActive: true,
   },
   Redux: {
     icon: <SiRedux size={iconSize} />,
     background: "bg-violet-500",
     color: "text-violet-500",
-    isActive: false,
+    isActive: true,
   },
   "Astro.js": {
     icon: <SiAstro size={iconSize} />,
@@ -146,13 +148,13 @@ export const STACKS: SkillProps = {
     icon: <SiNextdotjs size={iconSize} />,
     background: "bg-black-800",
     color: "text-black-50",
-    isActive: false,
+    isActive: true,
   },
   "Node.js": {
     icon: <SiNodedotjs size={iconSize} />,
     background: "bg-green-600",
     color: "text-green-600",
-    isActive: false,
+    isActive: true,
   },
   "Express.js": {
     icon: <SiExpress size={iconSize} />,
@@ -212,13 +214,13 @@ export const STACKS: SkillProps = {
     icon: <SiMongodb size={iconSize} />,
     background: "bg-green-600",
     color: "text-green-600",
-    isActive: false,
+    isActive: true,
   },
   Firebase: {
     icon: <SiFirebase size={iconSize} />,
     background: "bg-amber-500",
     color: "text-amber-500",
-    isActive: false,
+    isActive: true,
   },
   Supabase: {
     icon: <SiSupabase size={iconSize} />,
@@ -248,7 +250,7 @@ export const STACKS: SkillProps = {
     icon: <FaNpm size={iconSize} />,
     background: "bg-red-700",
     color: "text-red-500",
-    isActive: false,
+    isActive: true,
   },
   Yarn: {
     icon: <SiYarn size={iconSize} />,
@@ -260,12 +262,30 @@ export const STACKS: SkillProps = {
     icon: <SiBun size={iconSize} />,
     background: "bg-orange-100",
     color: "text-yellow-50",
-    isActive: false,
+    isActive: true,
   },
   Github: {
     icon: <SiGithub size={iconSize} />,
     background: "bg-slate-800",
     color: "text-neutral-50",
+    isActive: true,
+  },
+  Java: {
+    icon: <FaJava size={iconSize} />,
+    background: "bg-orange-600",
+    color: "text-orange-600",
+    isActive: true,
+  },
+  Git: {
+    icon: <SiGit size={iconSize} />,
+    background: "bg-orange-600",
+    color: "text-orange-600",
+    isActive: true,
+  },
+  "CI/CD": {
+    icon: <SiGithubactions size={iconSize} />,
+    background: "bg-blue-600",
+    color: "text-blue-600",
     isActive: true,
   },
   SpringBoot: {
@@ -278,7 +298,7 @@ export const STACKS: SkillProps = {
     icon: <SiSpringsecurity size={iconSize} />,
     background: "bg-green-500",
     color: "text-green-500",
-    isActive: true,
+    isActive: false,
   },
   AWS: {
     icon: <SiAmazonaws size={iconSize} />,
